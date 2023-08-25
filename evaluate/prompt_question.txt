@@ -1,0 +1,13 @@
+Read the given article in the quotation marks and make 5 questions based on the article with these constraints:
+
+1. First understand the main keys of the article, then make questions based on those keys. The questions should cover as much information in the article as possible.
+2. Only make questions based on given article. Each question is generated separately, unrelated to the other questions.
+3. Each question must be as detailed as possible and should contain location, time or specific information of event. 
+4. Do not repeat parts of questions to maximize diversity. The content of the questions should not be similar.
+5. Do not make general questions or type of question containing third person pronouns such as she, he, her, him, his, hers, it, they, them or this
+6. The length of each question should not be less than 10 words.
+
+List 5 questions with this template:
+1.
+2.
+3.
