@@ -53,8 +53,6 @@ LOADER_MAPPING = {
     ".md": (UnstructuredMarkdownLoader, {}),
     ".odt": (UnstructuredODTLoader, {}),
     ".pdf": (PyMuPDFLoader, {}),
-    ".ppt": (UnstructuredPowerPointLoader, {}),
-    ".pptx": (UnstructuredPowerPointLoader, {}),
     ".txt": (TextLoader, {"encoding": "utf8"}),
 }
 
@@ -103,17 +101,7 @@ def does_vectorstore_exist(persist_directory: str) -> bool:
     return False
 
 def main():
-    # if does_vectorstore_exist(persist_directory):
-    #     # Update and store locally vectorstore
-    #     print(f"Appending to existing vectorstore at {persist_directory}")
-    #     db = Chroma(documents, embeddings, persist_directory=persist_directory, collection_metadata={"hnsw:space": "cosine"})
-    #     collection = db.get()
-    #     ignore_files = [metadata['source'] for metadata in collection['metadatas']]
-    #     documents = load_documents(source_directory, ignore_files)
-    #     print(f"Creating embeddings. May take some minutes...")
-    #     db.add_documents(documents)
-    # else:
-        # Create and store locally vectorstore
+
     print("Creating new vectorstore")
     documents = load_documents(source_directory)
     print(f"Creating embeddings. May take some minutes...")
